@@ -194,6 +194,7 @@ static const void *kStatusBarStyle = &kStatusBarStyle;
 - (void) initializeStatusBarBackgroundView
 {
     CGRect statusBarFrame = [UIApplication sharedApplication].statusBarFrame;
+    statusBarFrame.origin.x = 0;
     statusBarFrame.origin.y = 0;
 
     if ([[UIApplication sharedApplication]statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown &&
